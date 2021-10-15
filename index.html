@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color:#2F2F2F;
+        }
+        #cvs{
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+            margin-top: 100px;
+        }
+        #box{
+            position: fixed;
+            top:110px;
+            left:370px;
+            overflow: hidden;
+            display: none;
+            flex-direction: column;
+            height: 30px;
+            font-size: 24px;
+            font-weight: bold;
+            color: gold;
+        }
+        #decade{
+            margin-left: 120px;
+            margin-top: 2px;
+        }
+        #bit{
+            margin-left: 136px;
+            margin-top: -330px;
+        }
+        #decade p,#bit p{
+            display: flex;
+            height: 30px;
+            line-height: 30px;
+        }
+        #start{
+            position: fixed;
+            background: url("image/start.png") no-repeat;
+            background-size: 100% 100%;
+            width: 260px;
+            height: 100px;
+            border: none;
+            top: 520px;
+            left: 850px;
+            cursor: pointer;
+        }
+        #re_start{
+            position: fixed;
+            background: darkgoldenrod;
+            color: white;
+            width: 260px;
+            height: 75px;
+            display: none;
+            border: 0px;
+            border-radius: 25px;
+            top: 520px;
+            left: 850px;
+            cursor: pointer;
+            font-weight: bolder;
+            font-size: 32px;
+            letter-spacing: 5px;
+        }
+        #guidance{
+            position: fixed;
+            width: 480px;
+            height: 340px;
+            top: 500px;
+            left: 1080px;
+        }
+    </style>
+</head>
+<body onload="onLoad()">
+    <canvas id="cvs" width="1200" height="750"></canvas>
+    <div id="box">
+        <p>金币数量：</p>
+        <div id="decade">
+            <p>0</p>
+            <p>1</p>
+            <p>2</p>
+            <p>3</p>
+            <p>4</p>
+            <p>5</p>
+            <p>6</p>
+            <p>7</p>
+            <p>8</p>
+            <p>9</p>
+        </div>
+        <div id="bit">
+            <p>0</p>
+            <p>1</p>
+            <p>2</p>
+            <p>3</p>
+            <p>4</p>
+            <p>5</p>
+            <p>6</p>
+            <p>7</p>
+            <p>8</p>
+            <p>9</p>
+        </div>
+    </div>
+    <button id="start"></button>
+    <button id="re_start">重新开始</button>
+    <img src="image/guidance.png" alt="" id="guidance">
+    <script src="js/startOrOver.js"></script>
+    <script src="js/map_js.js"></script>
+    <script src="js/game_js.js"></script>
+</body>
+</html>
